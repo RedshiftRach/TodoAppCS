@@ -16,10 +16,10 @@ namespace TodoAppCSharp.Mappers;
             var todo = new Todo
             {
                 Title = request.Title,
+                Content = request.Content,
                 Author = request.Author,
                 DateOfPublication = request.DateOfPublication
             };
             return todo;
         }
     }
-}
