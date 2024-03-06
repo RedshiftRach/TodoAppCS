@@ -10,5 +10,5 @@ public class Todo
     public string Title { get; set; }
     public string Content { get; set; }
     public string Author { get; set; }
-    public DateOnly DateOfTodo { get; set; }
+    public DateOnly DateOfPublication { get; set; }
 }
