@@ -1,9 +1,26 @@
+using TodoAppCSharp.Mappers;
+using TodoAppCSharp.Models;
+using TodoAppCSharp.Repository;
+using TodoAppCSharp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var dictionary = new Dictionary<Guid, Todo>();
+var tr = new TodoRepository(dictionary);
+var todo = new Todo
+{
+    Author = "Satoshi Nakamoto", Content = "How does Bitcoin compare to other cryptocurrencies?",
+    DateOfPublication = new DateTime(2009, 07, 23), Title = "Bitcoin and other cryptocurrencies"
+};
+dictionary.Add(todo.Id, todo);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddSingleton<ITodoRepository>(tr);
+builder.Services.AddSingleton<ITodoService, TodoService>();
+builder.Services.AddSingleton<ITodoMapper, TodoMapper>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -15,30 +32,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
-
+app.UseAuthorization();
+app.MapControllers();
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

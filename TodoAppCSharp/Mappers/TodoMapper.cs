@@ -2,12 +2,9 @@ using TodoAppCSharp.Contracts;
 using TodoAppCSharp.Models;
 
 namespace TodoAppCSharp.Mappers;
-
     public interface ITodoMapper
     {
-
         public Todo Map (TodoRequest request);
-
     }
     public class TodoMapper : ITodoMapper
     {

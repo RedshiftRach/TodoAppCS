@@ -21,9 +21,7 @@ namespace TodoAppCSharp.Repository;
 
         public void Add(Todo todo)
         {
-
             _repository.Add(todo.Id, todo);
-
         }
 
         public void Delete(Guid Id)

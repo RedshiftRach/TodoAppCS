@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoAppCSharp", "TodoAppCSharp.csproj", "{3EC7AFA5-BA7A-4562-BD09-090B4E01A714}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoAppCSharp", "TodoAppCSharp\TodoAppCSharp.csproj", "{3EC7AFA5-BA7A-4562-BD09-090B4E01A714}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
