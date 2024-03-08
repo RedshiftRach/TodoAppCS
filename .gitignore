@@ -6,6 +6,8 @@ TodoAppCSharp/obj
 TodoAppCSharp.Test/bin
 TodoAppCSharp.Test/obj
 packages
+.DS_Store
+.idea
 # Rider ignored files
 /modules.xml
 /.idea.TodoAppCSharp.iml

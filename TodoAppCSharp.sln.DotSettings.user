@@ -3,7 +3,5 @@
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">/usr/local/share/dotnet/sdk/8.0.201/MSBuild.dll</s:String>
 	<s:Int64 x:Key="/Default/Environment/Hierarchy/Build/BuildTool/MsbuildVersion/@EntryValue">1114112</s:Int64>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0ec38fdb_002Dc042_002D4e96_002D96c5_002Df911bb54ee90/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Delete_ShouldCallDelete" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::0B8855BB-9146-465A-B98A-038FF7A54E65::net8.0::TodoAppCSharp.Test.TodoRepositoryTests.Delete_ShouldCallDelete&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Project Location="/Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp.Test" Presentation="&amp;lt;TodoAppCSharp.Test&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
