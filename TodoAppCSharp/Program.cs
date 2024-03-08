@@ -18,9 +18,9 @@ dictionary.Add(todo.Id, todo);
 builder.Services.AddSingleton<ITodoRepository>(tr);
 builder.Services.AddSingleton<ITodoService, TodoService>();
 builder.Services.AddSingleton<ITodoMapper, TodoMapper>();
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddControllers();
 
 var app = builder.Build();
 

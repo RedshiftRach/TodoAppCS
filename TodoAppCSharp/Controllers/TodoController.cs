@@ -5,13 +5,17 @@ using TodoAppCSharp.Services;
 
 namespace TodoAppCSharp.Controllers;
 
+[ApiController]
+[Route("[controller]")]
+[Consumes("application/json")]
+[Produces("application/json")]
 public class TodoController(ILogger<TodoController> logger, ITodoService todoService, ITodoMapper todoMapper)
     : ControllerBase
 {
     // GET
     private readonly ILogger<TodoController> _logger = logger;
 
-        [HttpGet()]
+    [HttpGet]
         public IActionResult GetAll()
         {
             // Do something
@@ -36,7 +40,7 @@ public class TodoController(ILogger<TodoController> logger, ITodoService todoSer
             return Ok(todo);
         }
 
-        [HttpPost()]
+        [HttpPost]
         public IActionResult Post([FromBody] TodoRequest todoRequest)
         {
             // Do something
