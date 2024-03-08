@@ -60,9 +60,9 @@
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TodoAppCSharp.props
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/staticwebassets.pack.json
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/scopedcss/bundle/TodoAppCSharp.styles.css
-/Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/TodoAppCSharp.csproj.CopyComplete
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/TodoAppCSharp.dll
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/refint/TodoAppCSharp.dll
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/TodoAppCSharp.pdb
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/TodoAppCSharp.genruntimeconfig.cache
 /Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/ref/TodoAppCSharp.dll
+/Users/rajayi/RiderProjects/TodoAppCS/TodoAppCSharp/obj/Debug/net8.0/TodoAppC.19E37854.Up2Date
