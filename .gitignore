@@ -1,6 +1,11 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+TodoAppCSharp/bin
+TodoAppCSharp/obj
+TodoAppCSharp.Test/bin
+TodoAppCSharp.Test/obj
+packages
 # Rider ignored files
 /modules.xml
 /.idea.TodoAppCSharp.iml
