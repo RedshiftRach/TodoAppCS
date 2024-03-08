@@ -1,0 +1,20 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+TodoAppCSharp/bin
+TodoAppCSharp/obj
+TodoAppCSharp.Test/bin
+TodoAppCSharp.Test/obj
+packages
+.DS_Store
+.idea
+# Rider ignored files
+/modules.xml
+/.idea.TodoAppCSharp.iml
+/projectSettingsUpdater.xml
+/contentModel.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
